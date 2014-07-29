@@ -12,7 +12,7 @@ This will build the project and copy the jar to the plugins folder in neo4j.
 
 Also put the following text in your neo4j `conf/neo4j-server.properties` file:
 
-    `org.neo4j.server.thirdparty_jaxrs_classes=examples.unmanaged=/examples/unmanaged`
+    org.neo4j.server.thirdparty_jaxrs_classes=examples.unmanaged=/examples/unmanaged
 
 To test, run:
 
