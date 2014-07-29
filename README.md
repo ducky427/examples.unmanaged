@@ -8,11 +8,19 @@ Edit the Makefile to point to your Neo4j installation. Then run:
 
     make
 
-Also put the following line in your neo4j conf/neo4j-server.properties file: `org.neo4j.server.thirdparty_jaxrs_classes=examples.unmanaged=/examples/unmanaged`
+This will build the project and copy the jar to the plugins folder in neo4j.
 
-To test run:
+Also put the following text in your neo4j `conf/neo4j-server.properties` file:
+
+    `org.neo4j.server.thirdparty_jaxrs_classes=examples.unmanaged=/examples/unmanaged`
+
+To test, run:
 
     curl http://localhost:7474/examples/unmanaged/helloworld/10
+
+You should see:
+
+    Hello World, nodeId=10
 
 ## License
 
